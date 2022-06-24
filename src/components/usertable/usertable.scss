@@ -1,0 +1,81 @@
+.usertable {
+
+    height: 600px;
+    padding: 20px;
+
+    .title {
+        width: 100%;
+        font-size: larger;
+        color: grey;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+
+        .addUser {
+            text-decoration: none;
+            color: limegreen;
+            font-size: large;
+            font-weight: 400;
+            border: 1px solid limegreen;
+            padding: 5px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+    }
+
+    .poster {
+        display: flex;
+        align-items: center;
+
+        .cell-image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            //object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .status {
+        padding:5px;
+        border-radius: 5px;
+
+        &.active {
+            color: green; 
+            background-color: rgba(0, 128, 0, 0.151);
+        }
+
+        &.pending {
+            color: goldenrod; 
+            background-color: rgba(189, 189, 3, 0.103);
+        }
+
+        &.passive {
+            color: darkred;
+            background-color: rgba(242, 128, 143, 0.607);
+        }
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .view {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: darkgrey;
+            border: 1px dotted rgba(169, 169, 169, 0.448);
+            cursor: pointer;
+        }
+
+        .delete {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            border: 1px dotted rgba(220, 20, 60, 0.316);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.App.dark {
+    
+    background-color: #222;
+    color: rgb(156, 156, 156);
+
+    .chart-grid { stroke: rgba(228, 228, 228, 0.219);}
+
+    .data-table {
+        background-color: #222;
+
+        .tableCell {
+            color:grey;
+        }
+
+        .status {
+            &.Approved, &.Pending {
+                color:rgb(156, 156, 156);
+                background-color: rgba(139, 0, 139, 0.448);
+            }
+        }
+    }
+
+    .wrapper { 
+        color: #999; 
+        border-color: grey;
+
+        .search {
+            border-color: grey;
+        }
+
+        .navigate-items {
+            .item { 
+                color: darkmagenta;
+
+                .icon { color:darkmagenta; }
+
+                .counter { 
+                    background-color: #333;
+                    color:whitesmoke;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: #222;
+        border-color: #333;
+
+        .sidebar-top {
+            .logo { color: #999;}
+        }
+
+        hr {
+            border-color:#333;
+        }
+
+        ul {
+            p { color:darkmagenta; }
+
+            li {
+                 &:hover {
+                    background-color: #333;
+                    color:darkmagenta
+                 }
+            }
+        }
+    }
+
+    .widget-content {
+        .left {
+            .title { color: darkmagenta; }
+        }
+
+        .right {
+
+            .percent {
+                &.positive, &.negative {
+                    color:darkmagenta;
+                }
+            }
+            .icon { 
+                color:rgb(156, 156, 156); 
+            }
+        }
+    }
+
+    .featured {
+
+        .bottom {
+            .summary {
+                .item {
+                    .item-result {
+                        &.positive, &.negative { color:darkmagenta;}
+                    }
+                }
+            }
+        }
+    }
+
+    .usertable {
+        .grid {
+            color:#999;
+            border: none;
+            
+            .status {
+                
+                &.active, &.pending, &.passive {
+                    color:rgb(156, 156, 156);
+                    background-color: rgba(139, 0, 139, 0.448);
+                }
+            }
+
+            .action {
+
+                .view,.delete {
+                    color:#999;
+                    border: 1px dotted rgba(139, 0, 139, 0.656);
+                }
+            }
+            
+        }
+    }
+
+
+    .single {
+        .single-content {
+            .top {
+                .top-left {
+                    .edit {
+                        color:rgb(156, 156, 156);
+                        background-color: rgba(139, 0, 139, 0.448);
+                    }
+                }
+            }
+        }
+    }
+
+    .new {
+        .new-content {
+            .bottom {
+                .bottom-right {
+                    form {
+                        button {
+                            color:rgb(156, 156, 156);
+                            background-color: rgba(139, 0, 139, 0.448);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    input { background-color: transparent; }
+}
